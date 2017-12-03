@@ -10,9 +10,7 @@ class Template extends Component {
     return (
       <div>
         <Header />
-        <main>
-          {this.props.children}
-        </main>
+        {this.props.children}
         <Footer />
       </div>
     ) //return
