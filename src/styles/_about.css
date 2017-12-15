@@ -1,0 +1,18 @@
+.my-container {
+  background-color: #F8F8F8;
+  height: 100%;
+  width: 100%;
+  padding: 14%;
+  padding-top: 40px;
+  padding-bottom: 150px;
+}
+.card-column {
+  box-shadow: 0 0 10px #fff;
+  margin-top: 5%;
+}
+.card-body {
+  font-size: 12px;
+}
+.card-title {
+  font-size: 16px;
+}

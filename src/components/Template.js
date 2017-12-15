@@ -3,7 +3,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin'
 import Header from './Header'
 import Footer from './Footer'
 
-injectTapEventPlugin()
+injectTapEventPlugin() // function for touch screens
 
 class Template extends Component {
   render() {

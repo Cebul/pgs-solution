@@ -1,0 +1,17 @@
+.my-container {
+  background-color: #2C2C2C;
+  color: #949494;
+  font-size: 12px;
+  height: 111px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.powered {
+  border-top: 1px solid #949494;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding-top: 10px;
+}

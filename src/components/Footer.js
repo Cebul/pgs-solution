@@ -1,32 +1,16 @@
 import React from 'react'
-
-const styles = {
-  container: {
-    backgroundColor: "#2C2C2C",
-    color: "#949494",
-    fontSize: 12,
-    height: 111,
-    position: "fixed",
-    bottom: 0,
-    left: 0,
-    right: 0,
-    textAlign: "center"
-  },
-  powered: {
-    width: 300,
-    height: 200,
-    borderTop: "1px solid #949494",
-    margin: "0 auto",
-    marginTop: 40,
-    paddingTop: 10
-  }
-}
+import {Container, Row, Col} from 'reactstrap'
+import '../styles/_footer.css'
 
 const Footer = () => {
   return (
-    <div style={styles.container}>
-      <div style={styles.powered}>Powered by Kamil Cebula</div>
-    </div>
+    <Container fluid className="my-container">
+      <Row>
+        <Col xs={{size:8, offset: 2}} sm={{size:4, offset: 4}} md={{size:4, offset: 4}}>
+          <div className="powered">Powered by Kamil Cebula</div>
+        </Col>
+      </Row>
+    </Container>
   )
 }
 

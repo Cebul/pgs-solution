@@ -1,0 +1,29 @@
+.contact-container {
+  padding-top: 0;
+  padding-bottom: 200px;
+}
+.form-container {
+  height: 300px;
+}
+.form-input {
+  margin-top: 5px;
+  border: none;
+  border-bottom: 2px solid #DCDCDC;
+  border-radius: 0;
+}
+.form-input:focus {
+  border: none;
+}
+.form-input.message {
+  margin-top: 100px;
+}
+.form-btn {
+  position: absolute;
+  left: 82%;
+  background-color: #5B61FC;
+  margin-top: 20px;
+  width: 100px;
+}
+.form-btn:hover {
+  cursor: pointer;
+}

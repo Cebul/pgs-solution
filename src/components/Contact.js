@@ -1,44 +1,37 @@
 import React from 'react'
-import { Button, Col, Container, Row, Form, Input } from 'reactstrap'
-
-const styles = {
-  container: {
-    position: "absolute",
-    top: "50%",
-    marginTop: -150
-  }
-}
+import { Button,Container, Col, Row, Form, Input } from 'reactstrap'
+import '../styles/_contact.css'
 
 
 const Contact = () => {
   return (
-    <Container style={styles.container}>
+    <Container className="contact-container">
       <Row>
-        <Col sm={{ size: 8, offset: 3}} md={{ size: 5, offset: 4}} lg={{ size: 5, offset: 4}}>
-          <Form>
-            <Container style={{border: "2px solid #222", paddingTop: 70, paddingBottom: 50, margin: "0 auto"}}>
-              <Row>
-                <Col sm={{size:8, offset: 2}}>
-                  <Input type="text" required />
-                </Col>
-              </Row>
-              <Row>
-                <Col sm={{size:8, offset: 2}}>
-                  <Input type="email" required />
-                </Col>
-              </Row>
-              <Row>
-                <Col sm={{size:8, offset: 2}}>
-                  <Input type="textarea" />
-                </Col>
-              </Row>
-              <Row>
-                <Col sm={{size:8, offset: 7}}>
-                  <Button>SEND</Button>
-                </Col>
-              </Row>
-            </Container>
-          </Form>
+        <Col xs={{size: 12}} sm={{ size: 12}} md={{ size: 8, offset: 2}} lg={{ size: 6, offset: 3}}>
+            <Form>
+              <Container className="form-container">
+                <Row>
+                  <Col>
+                    <Input type="text" bsSize="lg" className="form-input name" placeholder="Name" required/>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <Input type="email" bsSize="lg" className="form-input" placeholder="Email" required/>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <Input type="text" bsSize="lg" className="form-input message" placeholder="Message"/>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col xs={{size: 6, offset: 3}} sm={{size:8}}>
+                    <Button  type="submit" className="form-btn">SEND</Button>
+                  </Col>
+                </Row>
+              </Container>
+            </Form>
         </Col>
       </Row>
     </Container>
